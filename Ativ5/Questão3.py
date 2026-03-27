@@ -16,19 +16,4 @@ print(f"Primeiro pedido na fila: {fila_pedidos.primeiro()}")
 print(f"Último pedido na fila: {fila_pedidos.ultimo()}")
 print(f"Quantidade de pedidos na fila: {fila_pedidos.tamanho()}")
 
-print("\n--- Simulando processamento de pedidos ---")
-pedido_processado = fila_pedidos.desenfileirar()
-print(f"Pedido processado: {pedido_processado}. Fila atual: {fila_pedidos}")
-print(f"Primeiro pedido na fila agora: {fila_pedidos.primeiro()}")
-print(f"Quantidade de pedidos na fila agora: {fila_pedidos.tamanho()}")
 
-pedido_processado = fila_pedidos.desenfileirar()
-print(f"Pedido processado: {pedido_processado}. Fila atual: {fila_pedidos}")
-print(f"Quantidade de pedidos na fila agora: {fila_pedidos.tamanho()}")
-
-print("\n--- Verificando fila vazia ---")
-print(f"A fila está vazia? {fila_pedidos.esta_vazia()}")
-fila_pedidos.desenfileirar() # Tentando desenfileirar de uma fila com um item
-fila_pedidos.desenfileirar() # Tentando desenfileirar de uma fila vazia
-print(f"Fila após tentar desenfileirar mais: {fila_pedidos}")
-print(f"A fila está vazia? {fila_pedidos.esta_vazia()}")
